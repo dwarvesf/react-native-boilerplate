@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {ActivityIndicator, StatusBar} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {StatusBar} from 'react-native';
+// import {SafeAreaView} from 'react-native-safe-area-context';
 import DropdownAlert from 'react-native-dropdownalert';
 
 // import {
@@ -14,9 +14,11 @@ import DropdownAlert from 'react-native-dropdownalert';
 // } from '@expo-google-fonts/inter';
 
 import {MainStackNavigatorParamList, navigationRef, ROUTES} from '../constants';
-import {Style, Palette} from '../styles';
-import {LoginScreen} from '../screens/login';
+// import {Style, Palette} from '../styles';
 import {HomeScreen} from '../screens/home';
+import {QuoteListScreen} from '../screens/home/quoteList';
+
+import {LoginScreen} from '../screens/login';
 import {ProfileScreen} from '../screens/profile';
 import {SignUpScreen} from '../screens/signUp';
 import {AuthContextProvider} from '../contexts/auth';
@@ -51,6 +53,10 @@ export const AppContainer = React.memo(() => {
           <MainStack.Screen name={ROUTES.Login} component={LoginScreen} />
           <MainStack.Screen name={ROUTES.Profile} component={ProfileScreen} />
           <MainStack.Screen name={ROUTES.SignUp} component={SignUpScreen} />
+          <MainStack.Screen
+            name={ROUTES.QuoteList}
+            component={QuoteListScreen}
+          />
         </MainStack.Navigator>
       </NavigationContainer>
       <DropdownAlert

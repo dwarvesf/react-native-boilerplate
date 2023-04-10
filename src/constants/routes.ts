@@ -6,6 +6,7 @@ export enum ROUTES {
   Profile = 'Profile',
   SignUp = 'SignUp',
   Splash = 'Splash',
+  QuoteList = 'QuoteList',
 }
 
 type LoginParams = {
@@ -19,6 +20,7 @@ export type MainStackNavigatorParamList = {
   Profile: undefined;
   SignUp: undefined;
   Splash: undefined;
+  QuoteList: undefined;
 };
 
 declare global {
