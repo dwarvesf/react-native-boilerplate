@@ -98,6 +98,69 @@ export const HomeScreen = React.memo(() => {
         })}>
         <Text>{'Shared Element Transition '}</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={onExampleMapView}
+        style={Style.s({
+          px: responsiveWidth(4),
+          py: responsiveHeight(2),
+          bg: 'khaki',
+        })}>
+        <Text>{'Notification with FCM'}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={onExampleMapView}
+        style={Style.s({
+          px: responsiveWidth(4),
+          py: responsiveHeight(2),
+          bg: 'lemonchiffon',
+        })}>
+        <Text>{'Code Push (AppCenter)'}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={onExampleMapView}
+        style={Style.s({
+          px: responsiveWidth(4),
+          py: responsiveHeight(2),
+          bg: 'lavender',
+        })}>
+        <Text>{'Custom Fonts'}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={onExampleMapView}
+        style={Style.s({
+          px: responsiveWidth(4),
+          py: responsiveHeight(2),
+          bg: 'aliceblue',
+        })}>
+        <Text>{'Native module'}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={onExampleMapView}
+        style={Style.s({
+          px: responsiveWidth(4),
+          py: responsiveHeight(2),
+          bg: 'aquamarine',
+        })}>
+        <Text>{'Background service'}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={onExampleMapView}
+        style={Style.s({
+          px: responsiveWidth(4),
+          py: responsiveHeight(2),
+          bg: 'cornsilk',
+        })}>
+        <Text>{'Three JS'}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={onExampleMapView}
+        style={Style.s({
+          px: responsiveWidth(4),
+          py: responsiveHeight(2),
+          bg: 'antiquewhite',
+        })}>
+        <Text>{'Utils (toast, alert, clipboard, modal, ...)'}</Text>
+      </TouchableOpacity>
     </MainLayout>
   );
 });
