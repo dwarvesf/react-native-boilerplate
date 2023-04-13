@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import {MainLayout} from '../../components';
 import {Style} from '../../styles';
 import {
@@ -13,7 +13,7 @@ export const HomeScreen = React.memo(() => {
   const nav = useNavigator();
 
   const onExampleGetAPI = React.useCallback(() => {
-    nav.navigate(ROUTES.QuoteList);
+    nav.navigate(ROUTES.Quote);
   }, [nav]);
 
   const onExampleGetDataPagination = React.useCallback(() => {
