@@ -1,4 +1,4 @@
-import { getStorybookUI } from '@storybook/react-native';
+import {getStorybookUI} from '@storybook/react-native';
 
 // import './storybook.requires';
 

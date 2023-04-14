@@ -1,11 +1,11 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
-import {MainLayout} from '@components';
-import {Style} from '@styles';
 import {
   responsiveHeight,
   responsiveWidth,
 } from 'react-native-responsive-dimensions';
+import {MainLayout} from '@components';
+import {Style} from '@styles';
 import {useNavigator} from '@hooks';
 import {ROUTES} from '@constants';
 

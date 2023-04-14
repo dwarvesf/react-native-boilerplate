@@ -1,3 +1,5 @@
+import Config from 'react-native-config';
+
 type Headers = Record<string, string>;
 
 export class Client {
@@ -9,7 +11,7 @@ export class Client {
     ...this.headers,
   };
 
-  baseUrl: string = 'https://animechan.vercel.app/api';
+  baseUrl: string = Config?.BASE_URL ?? '';
 
   public get formDataHeaders(): Headers {
     const cloned = Object.assign({}, this.privateHeaders);
