@@ -133,35 +133,6 @@ function HomePage() {
 }
 ```
 
-When rendered normally with the standard `ReactDOM.render` function, this will
-be the HTML output (_Comments added in parallel to compare structures in HTML
-from JSX source_):
-
-```html
-<button>
-  <!-- <Button>             -->
-  <i class="fa fa-checkmark"></i>
-  <!--   <CheckmarkIcon />  -->
-  Click Me!
-  <!--   { props.children } -->
-</button>
-<!-- </Button>            -->
-```
-
-Conversely, when rendered with the shallow renderer, we'll get a String
-containing this "HTML":
-
-```html
-<button>
-  <!-- <Button>             -->
-  <CheckmarkIcon />
-  <!--   NOT RENDERED!      -->
-  Click Me!
-  <!--   { props.children } -->
-</button>
-<!-- </Button>            -->
-```
-
 If we test our `Button` with the normal renderer and there's a problem with the
 `CheckmarkIcon` then the test for the `Button` will fail as well. This makes it
 harder to find the culprit. Using the _shallow_ renderer, we isolate the
@@ -208,14 +179,14 @@ with a previously committed snapshot. If no snapshot exists, a new one is
 created.
 
 For this, we first call `render`. This will render our `<Button />` component
-into a _container_, by default a `<div>`, which is appended to `document.body`.
+into a _container_, by default a `<View>`, which is appended to `document.body`.
 We then create a snapshot and `expect` that this snapshot is the same as the
 existing snapshot, taken in a previous run of this test and committed to the
 repository.
 
 ```javascript
 it('renders and matches the snapshot', () => {
-  const text = 'Click me!'
+  const text = 'Press me!'
   const { container } = render(<Button>{text}</Button>)
 
   expect(container.firstChild).toMatchSnapshot()
