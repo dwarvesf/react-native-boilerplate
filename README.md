@@ -87,3 +87,12 @@ return (
    ...
 )
 ```
+
+## Documentation
+
+- [Getting started](./docs/GETTING_STARTED.md)
+- [Tech ecosystem](./docs/TECH_ECOSYSTEM.md)
+- [Code style](./docs/CODE_STYLE.md)
+- [Writing tests](./docs/WRITING_TEST.md)
+- [Editor](./docs/EDITOR.md)
+- [Deployment](./docs/DEPLOYMENT.md)
