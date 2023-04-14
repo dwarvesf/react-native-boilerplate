@@ -107,8 +107,7 @@ Pull Requests.
   - You can optimize `context` by separating the `state` and the `dispatch`
     function.
   - Know the terms
-    [`lazy loading`](https://nextjs.org/docs/advanced-features/dynamic-import)
-    and [`bundle/code splitting`](https://reactjs.org/docs/code-splitting.html)
+    [`bundle/code splitting`](https://reactjs.org/docs/code-splitting.html)
   - Window large lists (with
     [`tannerlinsley/react-virtual`](https://github.com/tannerlinsley/react-virtual)
     or similar).
