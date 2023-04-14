@@ -1,21 +1,10 @@
-import {
-  // responsiveHeight,
-  responsiveWidth,
-} from 'react-native-responsive-dimensions';
+import {responsiveWidth} from 'react-native-responsive-dimensions';
 
 export const gutters = responsiveWidth(5.33);
 export const mainBorderRadius = 10;
 export const PICKER_HEIGHT = 48;
-export const resHeight = (height: number | string) =>
-  // if (typeof height === 'number') {
-  //   return responsiveHeight(height / 8.12); // 812px height follow by iPhone X
-  // }
-  height;
-export const resWidth = (width: number | string) =>
-  // if (typeof width === 'number') {
-  //   return responsiveWidth(width / 3.75); // 375px width follow by iPhone X
-  // }
-  width;
+export const resHeight = (height: number | string) => height;
+export const resWidth = (width: number | string) => width;
 
 export type BorderStyle = {
   bor?: number;

@@ -1,7 +1,6 @@
 import qs from 'query-string';
-import {Client} from '../services/apis';
-import fetcher from '../services/fetcher';
-import {GetQuotesAnimeRequest, Quote} from '../types';
+import {fetcher, Client} from '@services';
+import {GetQuotesAnimeRequest, Quote} from '@types';
 
 class QuoteService extends Client {
   public getQuoteRandom() {

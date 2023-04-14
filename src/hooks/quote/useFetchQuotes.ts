@@ -1,5 +1,5 @@
 import useSWRInfinite from 'swr/infinite';
-import {quoteService} from '../../api';
+import {quoteService} from '@api';
 
 const KEY = 'GET_QUOTES';
 

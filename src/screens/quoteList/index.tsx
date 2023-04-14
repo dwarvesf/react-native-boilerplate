@@ -3,12 +3,11 @@ import {View, Text, ActivityIndicator, RefreshControl} from 'react-native';
 import {FlashList} from '@shopify/flash-list';
 import {responsiveHeight} from 'react-native-responsive-dimensions';
 
-import {MainLayout} from '../../components';
-import {useFetchQuotes} from '../../hooks';
-import {Quote} from '../../types';
-import {Palette, Style} from '../../styles';
-
-import {keyExtractor} from '../../utils';
+import {MainLayout} from '@components';
+import {useFetchQuotes} from '@hooks';
+import {Quote} from '@types';
+import {Palette, Style} from '@styles';
+import {keyExtractor} from '@utils';
 
 export const PAGE_SIZE_DEFAULT = 10;
 

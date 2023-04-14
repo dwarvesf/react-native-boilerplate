@@ -1,5 +1,5 @@
 import {useFetchWithCache} from '../useFetchWithCache';
-import {quoteService} from '../../api';
+import {quoteService} from '@api';
 
 const KEY = 'GET_QUOTE_RANDOM';
 

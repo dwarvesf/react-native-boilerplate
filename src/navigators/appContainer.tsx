@@ -4,17 +4,16 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {StatusBar} from 'react-native';
 import DropdownAlert from 'react-native-dropdownalert';
 
-import {MainStackNavigatorParamList, navigationRef, ROUTES} from '../constants';
+import {MainStackNavigatorParamList, navigationRef, ROUTES} from '@constants';
+import {AuthContextProvider} from '@contexts';
+import {DropDownHolder} from '@core';
+
 import {HomeScreen} from '../screens/home';
 import {QuoteListScreen} from '../screens/quoteList';
-
 import {LoginScreen} from '../screens/login';
 import {ProfileScreen} from '../screens/profile';
 import {SignUpScreen} from '../screens/signUp';
 import {QuoteScreen} from '../screens/quote';
-import {AuthContextProvider} from '../contexts/auth';
-
-import {DropDownHolder} from '../core';
 
 const MainStack = createStackNavigator<MainStackNavigatorParamList>();
 

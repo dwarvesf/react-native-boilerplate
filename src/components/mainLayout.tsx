@@ -10,7 +10,7 @@ import {
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {responsiveHeight} from 'react-native-responsive-dimensions';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import {gutters, Style, Palette} from '../styles';
+import {gutters, Style, Palette} from '@styles';
 
 export interface MainLayoutProps extends React.PropsWithChildren<ViewProps> {
   children?: React.ReactNode | React.ReactNode[];

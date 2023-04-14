@@ -4,9 +4,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useAsyncEffect} from '@dwarvesf/react-hooks';
 import {mutate} from 'swr';
 
-import {services} from '../api';
-import {AUTH_TOKEN_KEY, AUTH_REFRESH_TOKEN_KEY} from '../constants';
-import {API_REQUEST, emitter} from '../services';
+import {services} from '@api';
+import {AUTH_TOKEN_KEY, AUTH_REFRESH_TOKEN_KEY} from '@constants';
+import {API_REQUEST, emitter} from '@services';
 
 interface AuthContextValues {
   isLogin: boolean;

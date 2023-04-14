@@ -1,8 +1,8 @@
 import React from 'react';
 import {ScrollView, Text, RefreshControl} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {Palette, Style, gutters} from '../../styles';
-import {useFetchQuoteRandom} from '../../hooks';
+import {Palette, Style, gutters} from '@styles';
+import {useFetchQuoteRandom} from '@hooks';
 
 export const QuoteScreen = React.memo(() => {
   const {data, isLoading, mutate} = useFetchQuoteRandom();

@@ -1,3 +1,5 @@
+import fetcher from './fetcher';
+
 export * from './apis';
-export * from './fetcher';
 export * from './emitter';
+export {fetcher};
