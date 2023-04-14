@@ -2,19 +2,9 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {StatusBar} from 'react-native';
-// import {SafeAreaView} from 'react-native-safe-area-context';
 import DropdownAlert from 'react-native-dropdownalert';
 
-// import {
-//   useFonts,
-//   Inter_400Regular,
-//   Inter_500Medium,
-//   Inter_600SemiBold,
-//   Inter_700Bold,
-// } from '@expo-google-fonts/inter';
-
 import {MainStackNavigatorParamList, navigationRef, ROUTES} from '../constants';
-// import {Style, Palette} from '../styles';
 import {HomeScreen} from '../screens/home';
 import {QuoteListScreen} from '../screens/quoteList';
 
@@ -29,21 +19,6 @@ import {DropDownHolder} from '../core';
 const MainStack = createStackNavigator<MainStackNavigatorParamList>();
 
 export const AppContainer = React.memo(() => {
-  // const [fontsLoaded] = useFonts({
-  //   Inter_400Regular,
-  //   Inter_500Medium,
-  //   Inter_600SemiBold,
-  //   Inter_700Bold,
-  // });
-
-  // if (!fontsLoaded) {
-  //   return (
-  //     <SafeAreaView style={Style.s({flex: 1, cen: true})}>
-  //       <ActivityIndicator size="large" color={Palette.primary} />
-  //     </SafeAreaView>
-  //   );
-  // }
-
   return (
     <AuthContextProvider>
       <StatusBar barStyle="dark-content" />
