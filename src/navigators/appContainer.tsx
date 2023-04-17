@@ -25,7 +25,7 @@ export const AppContainer = React.memo(() => {
       <NavigationContainer ref={navigationRef}>
         <MainStack.Navigator
           screenOptions={{headerShown: false}}
-          initialRouteName={ROUTES.Home}>
+          initialRouteName={ROUTES.Login}>
           <MainStack.Screen name={ROUTES.Home} component={HomeScreen} />
           <MainStack.Screen name={ROUTES.Login} component={LoginScreen} />
           <MainStack.Screen name={ROUTES.Profile} component={ProfileScreen} />

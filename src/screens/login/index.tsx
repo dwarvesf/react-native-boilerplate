@@ -15,7 +15,7 @@ export const LoginScreen = React.memo(() => {
   const nav = useNavigator();
 
   const onSignIn = React.useCallback(() => {
-    nav.navigate(ROUTES.Dashboard);
+    nav.navigate(ROUTES.Home);
   }, [nav]);
   const onUseDemoAccount = React.useCallback(() => {
     nav.navigate(ROUTES.Dashboard);
