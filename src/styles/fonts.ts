@@ -102,7 +102,7 @@ export type FontStyle = {
   tran?: 'none' | 'capitalize' | 'uppercase' | 'lowercase' | undefined;
 };
 
-const Fonts = {
+export const Fonts = {
   t: ({
     s,
     c,
@@ -134,5 +134,3 @@ const Fonts = {
       opacity: op,
     } as any),
 };
-
-export default Fonts;

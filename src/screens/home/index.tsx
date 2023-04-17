@@ -71,6 +71,15 @@ export const HomeScreen = React.memo(() => {
         })}>
         <Text>{'Utils (toast, alert, clipboard, modal, ...)'}</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => nav.navigate(ROUTES.Login)}
+        style={Style.s({
+          px: responsiveWidth(4),
+          py: responsiveHeight(2),
+          bg: 'antiquewhite',
+        })}>
+        <Text>{'Login'}</Text>
+      </TouchableOpacity>
     </MainLayout>
   );
 });

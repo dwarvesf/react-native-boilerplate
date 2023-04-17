@@ -90,6 +90,7 @@ return (
 
 ## Documentation
 
+- [Figma Design](https://www.figma.com/file/J6nd4QRDDS3k0zbaGrFJf2/react-native-boilerplate?node-id=0%3A1&t=jjDkE3DHJbqobnhO-1)
 - [Getting started](./docs/GETTING_STARTED.md)
 - [Tech ecosystem](./docs/TECH_ECOSYSTEM.md)
 - [Code style](./docs/CODE_STYLE.md)
