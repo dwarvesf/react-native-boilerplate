@@ -18,6 +18,10 @@ Package manager we use: yarn
 6. Run `yarn pod:install` or `npx pod-install` to install Pod dependencies.
 7. Run `yarn ios` (to start app in iOS) or `yarn android` (for android).
 
+<div align="center">
+    <img src="./img/signin-demo.png"  align="center" />
+</div>
+
 ### Android keystore configs setup
 Ask for a copy of the `keystore` and `properties` file and add them in `./android/app` directory.
 
