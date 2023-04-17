@@ -70,6 +70,7 @@
     "react-hook-form": "^7.34.2",
     "react-i18next": "^11.18.3",
     "react-native": "0.71.6",
+    "react-native-bouncy-checkbox": "^3.0.7",
     "react-native-calendars": "^1.1288.3",
     "react-native-config": "^1.4.6",
     "react-native-date-picker": "^4.2.5",

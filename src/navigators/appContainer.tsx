@@ -14,6 +14,7 @@ import {LoginScreen} from '../screens/login';
 import {ProfileScreen} from '../screens/profile';
 import {SignUpScreen} from '../screens/signUp';
 import {QuoteScreen} from '../screens/quote';
+import {DashboardScreen} from '../screens/dashboard';
 
 const MainStack = createStackNavigator<MainStackNavigatorParamList>();
 
@@ -33,6 +34,10 @@ export const AppContainer = React.memo(() => {
           <MainStack.Screen
             name={ROUTES.QuoteList}
             component={QuoteListScreen}
+          />
+          <MainStack.Screen
+            name={ROUTES.Dashboard}
+            component={DashboardScreen}
           />
         </MainStack.Navigator>
       </NavigationContainer>

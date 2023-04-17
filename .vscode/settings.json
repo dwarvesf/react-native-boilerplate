@@ -18,10 +18,12 @@
   "cSpell.words": [
     "chev",
     "Childs",
+    "direc",
     "dropdownalert",
     "dwarvesf",
     "hookform",
-    "modalbox"
+    "modalbox",
+    "unfill"
   ],
   "eslint.alwaysShowStatus": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
