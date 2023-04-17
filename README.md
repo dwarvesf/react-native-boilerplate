@@ -19,7 +19,7 @@ Package manager we use: yarn
 7. Run `yarn ios` (to start app in iOS) or `yarn android` (for android).
 
 <div align="center">
-    <img src="./docs/img/signin-demo.png"  align="center" />
+    <img src="./docs/img/signin-demo.png" width={200} align="center" />
 </div>
 
 ### Android keystore configs setup
