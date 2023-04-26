@@ -1,8 +1,10 @@
 # Deployment
 
-We use [https://netlify.com](Netlify) for Continuous Deployment at the moment
-but you can choose another service for deployment. Just make sure you set up the
-right build command and the correct path to app bundles.
+## Deployment for Android
+1. For AAB, run command `yarn android:generateAAB`. Navigate to the output file to get the generated AAB output file.
+2. For APK, run command `yarn android:generateAPK`. Navigate to the output file to get the generated APK output file.
+
+## Use code-push
 
 ## Main App
 
