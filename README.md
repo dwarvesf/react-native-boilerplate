@@ -4,6 +4,14 @@
 
 Package manager we use: yarn
 
+## Requirements
+
+Node 16 or greater is required. Development for iOS requires a Mac and Xcode 13 or up, and will target iOS 13 and up.
+
+You also need to install the dependencies required by React Native.  
+Go to the [React Native environment setup](https://reactnative.dev/docs/environment-setup), then select `React Native CLI Quickstart` tab.  
+Follow instructions for your given `development OS` and `target OS`.
+
 ## Development Setup
 
 1. Follow and make sure to setup development environment for react-native-cli [here](https://reactnative.dev/docs/0.70/environment-setup). To confirm is setup is properly working, create/initialize a new app to test.
