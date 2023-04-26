@@ -1,6 +1,6 @@
-Dwarves React Native boilerplate
+### Dwarves React Native boilerplate
 
-This project is a React Native boilerplate that can be used to kickstart a mobile application with React Native.
+# This project is a React Native boilerplate that can be used to kickstart a mobile application with React Native.
 
 Package manager we use: yarn
 
