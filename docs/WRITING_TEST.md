@@ -6,7 +6,7 @@ Following
 
 - _Write tests. Not too many. Mostly integration_.
 - Tests should make you more productive not slow you down. Maintaining tests can
-  slow you down. You get dimishing returns on adding more tests after a certain
+  slow you down. You get diminishing returns on adding more tests after a certain
   point.
 - Your tests should always resemble the way your software is used.
 - Make sure that you're not testing implementation details - things which users

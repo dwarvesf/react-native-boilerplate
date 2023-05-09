@@ -11,18 +11,18 @@ Pull Requests.
 
 ## Contribution guidelines
 
-- Code should be functional in style rather than Object Orientated or Imperitive
+- Code should be functional in style rather than Object Orientated or Imperative
   unless there are no clean alternatives.
 
   - Use pure functions where possible to make them testable and modular.
-  - Avoid mutating varibles and the `let` keyword.
+  - Avoid mutating variables and the `let` keyword.
   - React Components should be stateless functional components where possible.
   - Avoid classes and stateful modules where possible.
   - Don't Repeat Yourself. Make extensive use of the constants and utils files
     for re-usable strings and methods.
   - The above rules can be relaxed for test scripts.
 
-- React components should be simple and composible and cater to real life UI
+- React components should be simple and compossible and cater to real life UI
   design problems:
 
   - **Simplicity**: Strive to keep the component API fairly simple and show real
@@ -41,7 +41,7 @@ Pull Requests.
 
   - **Naming Props**: We all know naming is the hardest thing in this industry.
     Generally, ensure a prop name is indicative of what it does. Boolean props
-    should be named using auxilliary verbs such as does, has, is and should. For
+    should be named using auxiliary verbs such as does, has, is and should. For
     example, Button uses `isDisabled`, `isLoading`, etc.
 
 - Maintain the separation of concerns in the folder structure laid out in the
@@ -70,7 +70,7 @@ Pull Requests.
   its strengths:
 
   - Avoid using `any` when possible. Using `any` is sometimes valid, but should
-    rearely be used, even if to make quicker progress. Even `Unknown` is better
+    rarely be used, even if to make quicker progress. Even `Unknown` is better
     than using `any` if you aren't sure of an input parameter.
   - Pay attention when using the non-null assertion operator `!`. Only use if
     you know that a variable cannot be null right now rather than blindly using
@@ -80,7 +80,7 @@ Pull Requests.
   `kebab-case` for the rest.
 
 - Exports from files can be either as variable or default exports, but please
-  stick to naming the object before using `export default` to avoid anonomous
+  stick to naming the object before using `export default` to avoid anonymous
   module names in stack traces and React dev tools.
 
 - Your app should be fast but also remember "Premature optimization is the root
@@ -88,7 +88,7 @@ Pull Requests.
   profiler of
   [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
   (Chrome extension) is your friend! Once you find the root cause, try to follow
-  the suggetions to fix it:
+  the suggestions to fix it:
   - Use `useMemo` mostly just for expensive calculations.
   - Use `React.memo`, `useMemo`, and `useCallback` for reducing re-renders, they
     shouldn't have many dependencies and the dependencies should be mostly
@@ -99,7 +99,7 @@ Pull Requests.
     rerenders).
   - Putting your state as close as possible to where it's being used will not
     only make your code so much easier to read but It would also make your app
-    faster (state colocation).
+    faster (state collocation).
   - `Context` should be logically separated, do not add to many values in one
     context provider. If any of the values of your context changes, all
     components consuming that context also rerenders even if those components
@@ -120,6 +120,6 @@ Pull Requests.
 - [Home](../README.md)
 - [Getting started](./GETTING_STARTED.md)
 - [Tech ecosystem](./TECH_ECOSYSTEM.md)
-- [Writting test](./WRITING_TEST.md)
+- [Writing test](./WRITING_TEST.md)
 - [Editor](./EDITOR.md)
 - [Deployment](./DEPLOYMENT.md)

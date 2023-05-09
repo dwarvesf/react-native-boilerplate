@@ -43,5 +43,5 @@ Otherwise, you can use the comment to tell eslint to skip the fix
 - [Getting started](./GETTING_STARTED.md)
 - [Tech ecosystem](./TECH_ECOSYSTEM.md)
 - [Code style](./CODE_STYLE.md)
-- [Writting test](./WRITING_TEST.md)
+- [Writing test](./WRITING_TEST.md)
 - [Deployment](./DEPLOYMENT.md)

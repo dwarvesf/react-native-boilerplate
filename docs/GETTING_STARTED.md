@@ -84,5 +84,5 @@ The generated interfaces will be located at
 - [Code style](./CODE_STYLE.md)
 - [Version control](./VERSION_CONTROL.md)
 - [Editor](./EDITOR.md)
-- [Writting test](./WRITING_TEST.md)
+- [Writing test](./WRITING_TEST.md)
 - [Deployment](./DEPLOYMENT.md)

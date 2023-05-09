@@ -78,7 +78,7 @@ great balance of good performance and good developer experience.
 ## Architecture
 
 Most of frontend applications consist of four layers: Service connector, State
-management, Logic and UI. We opinionate about the technology for each layer with
+management, Logic and UI. We opinionated about the technology for each layer with
 a guarantee of production readiness.
 
 <View style={Style.s({cen: true})}>
@@ -105,5 +105,5 @@ behavior, take a look at the `lint-staged` section in `package.json`.
 - [Getting started](./GETTING_STARTED.md)
 - [Code style](./CODE_STYLE.md)
 - [Editor](./EDITOR.md)
-- [Writting test](./WRITING_TEST.md)
+- [Writing test](./WRITING_TEST.md)
 - [Deployment](./DEPLOYMENT.md)
