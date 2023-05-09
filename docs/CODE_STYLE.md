@@ -108,13 +108,12 @@ Pull Requests.
     function.
   - Know the terms
     [`bundle/code splitting`](https://reactjs.org/docs/code-splitting.html)
-  - Window large lists (with
-    [`tannerlinsley/react-virtual`](https://github.com/tannerlinsley/react-virtual)
+  - For large lists (with
+    [`shopify/flash-list`](https://github.com/shopify/flash-list)
     or similar).
-  - A smaller bundle size usually also means a faster app. You can visualize the
-    code bundles you've generated with
-    [`@next/bundle-analyzer`](https://www.npmjs.com/package/@next/bundle-analyzer).
-
+  - For image with caching (with
+    [`react-native-fast-image`](https://github.com/DylanVann/react-native-fast-image)
+    or similar).
 ## Read on:
 
 - [Home](../README.md)
