@@ -28,7 +28,6 @@ instead!**
 
 - [x] [Jest](http://facebook.github.io/jest/)
 - [x] [react-testing-library](https://github.com/kentcdodds/react-testing-library)
-- [x] [Cypress](https://github.com/cypress-io/cypress)
 
 ## Basic Building Blocks
 

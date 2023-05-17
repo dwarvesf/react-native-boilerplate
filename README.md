@@ -2,10 +2,14 @@
     Dwarves React Native Boilerplate
 </h1>
 <p align="center">
-  <a href="https://github.com/dwarvesf">
-    <img src="https://img.shields.io/badge/Powered%20by-Dwarves%20Foundation-%23e13f5e" alt="Dwarves Foundation." />
-  </a>
+    <a href="https://github.com/dwarvesf">
+        <img src="https://img.shields.io/badge/-make%20by%20dwarves-%23e13f5e?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsBAMAAADsqkcyAAAAD1BMVEUAAAD///////////////+PQt5oAAAABXRSTlMAQL//gOnhmfMAAAAJcEhZcwAAHsIAAB7CAW7QdT4AAACYSURBVHicndLRDYJAEIThMbGAI1qAYAO6bAGXYP81uSGBk+O/h3Mev4dhWJCkYZqreOi1xoh0eSIvoCaBRjc1B9+I31g9Z2aJ5jkOsYScBW8zDerO/fObnY/FiTl3caOEH2nMzpyZhezIlgqXr2OlOX617Up/nHnPUg0+LHl18YO50d3ghOy1ioeIq1ceTypsjpvYeJohfQEE5WtH+OEYkwAAAABJRU5ErkJggg==&&logoColor=white" alt="Dwarves Foundation." />
+    </a>
+    <a href="https://github.com/dwarvesf">
+        <img src="https://img.shields.io/badge/-join%20the%20community-%235865F2?style=for-the-badge&logo=discord&&logoColor=white" alt="Dwarves Foundation." />
+    </a>
 </p>
+
 
 This React Native boilerplate is a starting point for your mobile application development needs. It includes the basic setups and libraries you need to kickstart your project.
 
@@ -18,10 +22,29 @@ This React Native boilerplate is a starting point for your mobile application de
 
 ## Development Setup
 
-1. Run `bundle install` to setup iOS gemfile dependencies.
-2. Run `yarn` to install app dependencies.
-3. Run `npx pod-install` to install Pod dependencies.
-4. Run `yarn ios` (to start app in iOS) or `yarn android` (for android).
+1. Setup iOS gemfile dependencies:
+
+```bash
+bundle install
+````
+
+2. Install app dependencies.
+```bash
+yarn
+````
+
+3. Install Pod dependencies.
+```bash
+npx pod-install
+````
+
+4. Build and run app:
+```bash
+yarn ios # for iOS
+````
+```bash
+yarn android # for android
+````
 
 ## Documentation
 

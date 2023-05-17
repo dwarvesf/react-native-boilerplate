@@ -16,17 +16,18 @@ Pull Requests.
 
   - Use pure functions where possible to make them testable and modular.
   - Avoid mutating variables and the `let` keyword.
-  - React Components should be stateless functional components where possible.
+  - Components should be stateless functional components where possible.
   - Avoid classes and stateful modules where possible.
   - Don't Repeat Yourself. Make extensive use of the constants and utils files
     for re-usable strings and methods.
   - The above rules can be relaxed for test scripts.
 
-- React components should be simple and compossible and cater to real life UI
+- Components should be simple and compossible and cater to real life UI
   design problems:
 
   - **Simplicity**: Strive to keep the component API fairly simple and show real
     world scenarios of using the component.
+
   - **Representational**: React components should be templates, free of logic
     and purely presentational. It aims to make our components shareable and easy
     to test.
@@ -48,7 +49,10 @@ Pull Requests.
   initial scaffold:
 
   - `constants/` contains shared variables using across the app.
+  - `screens/` contains all screens in the app.
   - `components/` contains shared ui components using across the app.
+  - `navigators/` define navigation flow among screens of the app.
+  - `contexts/` contains shared contexts using across the app.
   - `utils/` contains shared functions using across the app.
   - `hooks/` contains shared hooks using across the app.
   - `types/` contains common `TypeScript` types or interfaces.
@@ -84,10 +88,7 @@ Pull Requests.
   module names in stack traces and React dev tools.
 
 - Your app should be fast but also remember "Premature optimization is the root
-  of all evil". **If you think it’s slow, prove it with a benchmark.**, the
-  profiler of
-  [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-  (Chrome extension) is your friend! Once you find the root cause, try to follow
+  of all evil". **If you think it’s slow, prove it with a benchmark**, [React Native Debugging](https://reactnative.dev/docs/debugging) provides many ways to monitor your app! Once you find the root cause, try to follow
   the suggestions to fix it:
   - Use `useMemo` mostly just for expensive calculations.
   - Use `React.memo`, `useMemo`, and `useCallback` for reducing re-renders, they
@@ -106,8 +107,6 @@ Pull Requests.
     don't use the specific value that was actually changed.
   - You can optimize `context` by separating the `state` and the `dispatch`
     function.
-  - Know the terms
-    [`bundle/code splitting`](https://reactjs.org/docs/code-splitting.html)
   - For large lists (with
     [`shopify/flash-list`](https://github.com/shopify/flash-list)
     or similar).

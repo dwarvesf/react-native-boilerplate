@@ -1,6 +1,6 @@
 # Getting started
 
-Install dependencies with `yarn` or `npm`:
+Install dependencies with `yarn` (recommended) or `npm`:
 
 ```bash
 yarn
@@ -18,9 +18,8 @@ yarn ios
 .
 ├── README.md                    # README file
 ├── babel.config.js              # Babel configuration
-├── public                       # Public folder
-│   └── img                      # Images used by the app
 ├── types                        # Shared TypeScript interfaces
+│── assets                       # App assets (images, sounds, etc...)
 ├── components                   # Shared components
 │   └── X
 │       └── X.tsx
@@ -28,15 +27,17 @@ yarn ios
 │       └── X.stories.tsx
 │       └── X.test.tsx
 │── screens                      # App screens
+│── navigators                   # Navigation flow
 ├── context                      # Shared context state
 ├── constants                    # Shared constants
+├── translation                  # Locale translation
 ├── hooks                        # Shared hooks
 │   └── tests
 │── styles                       # Shared style folder
-│   └── fonts.ts                   # Shared fonts style
+│   └── fonts.ts                 # Shared fonts style
 │   └── index.ts                   
-│   └── palette.ts                 # Palette colors
-│   └── style.ts                   # Style Utility func
+│   └── palette.ts               # Palette colors
+│   └── style.ts                 # Style Utility func
 │── utils                        # Utility folder
 │   └── tests
 ├── metro.config.js              # Metro configuration

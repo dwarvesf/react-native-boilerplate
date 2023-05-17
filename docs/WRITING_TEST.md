@@ -16,9 +16,7 @@ Following
 - You'll know you implemented correct tests when you rarely have to change tests
   when you refactor code given the same user behavior.
 - Use [Jest](https://jestjs.io/),
-  [React testing library](https://testing-library.com/docs/react-testing-library/intro/),
-  [Cypress](https://www.cypress.io/), and
-  [Mock service worker](https://github.com/mswjs/msw).
+  [React testing library](https://testing-library.com/docs/react-testing-library/intro/).
 
 If you've never done this before start with **unit testing**. Move on to
 **component testing** when you feel like you understand that!
@@ -97,50 +95,6 @@ You can find the sample implementation in
 Unit testing your utils and hooks is nice, but you can do even more to make sure
 nothing breaks your application. Since React is the view layer of your app,
 let's see how to test Components too!
-
-### Shallow rendering
-
-React provides us with a nice add-on called the Shallow Renderer. This renderer
-will render a React component **one level deep**. Lets take a look at what that
-means with a simple `<Button>` component.
-
-This component renders a `<button>` element containing a checkmark icon and some
-text:
-
-```javascript
-import React from 'react'
-import CheckmarkIcon from './CheckmarkIcon'
-
-function Button(props) {
-  return (
-    <Button onPress={props.onClick}>
-      <CheckmarkIcon />
-      {React.Children.only(props.children)}
-    </Button>
-  )
-}
-
-export default Button
-```
-
-It might be used in another component like this:
-
-```javascript
-import Button from './Button'
-
-function HomePage() {
-  return <Button onPress={this.doSomething}>Press me!</Button>
-}
-```
-
-If we test our `Button` with the normal renderer and there's a problem with the
-`CheckmarkIcon` then the test for the `Button` will fail as well. This makes it
-harder to find the culprit. Using the _shallow_ renderer, we isolate the
-problem's cause since we don't render any other components other than the one
-we're testing!
-
-The problem with the shallow renderer is that all assertions have to be done
-manually, and you cannot do anything that needs the DOM.
 
 ### react-testing-library
 
