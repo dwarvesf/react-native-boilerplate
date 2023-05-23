@@ -10,4 +10,4 @@ export default {
     notice: 'Notice',
     cancel: 'Cancel',
   },
-};
+}

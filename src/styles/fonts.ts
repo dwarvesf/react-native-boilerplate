@@ -1,14 +1,14 @@
-import {responsiveFontSize} from 'react-native-responsive-dimensions';
-import {resHeight, resWidth} from './style';
-import {Palette} from './palette';
+import { responsiveFontSize } from '@utils'
+import { resHeight, resWidth } from './style'
+import { Palette } from './palette'
 
-export const scaleFromFigma = (size: number) => responsiveFontSize(size / 7.6);
+export const scaleFromFigma = (size: number) => responsiveFontSize(size / 7.6)
 
 export type AvailableFonts =
   | 'Inter_400Regular'
   | 'Inter_500Medium'
   | 'Inter_600SemiBold'
-  | 'Inter_700Bold';
+  | 'Inter_700Bold'
 
 const base = (
   fontSize = 14,
@@ -22,11 +22,11 @@ const base = (
   fontSize: scaleFromFigma(fontSize),
   color,
   fontWeight,
-  ...(letterSpacing ? {letterSpacing} : {}),
-  ...(family ? {fontFamily: family} : {}),
-  ...(italic ? {fontStyle: 'italic'} : {}),
-  ...(typeof lineHeight === 'number' ? {lineHeight} : {}),
-});
+  ...(letterSpacing ? { letterSpacing } : {}),
+  ...(family ? { fontFamily: family } : {}),
+  ...(italic ? { fontStyle: 'italic' } : {}),
+  ...(typeof lineHeight === 'number' ? { lineHeight } : {}),
+})
 
 const margin = (
   left?: number | string,
@@ -42,7 +42,7 @@ const margin = (
   marginBottom: typeof bottom === 'number' ? resHeight(bottom) : bottom,
   marginHorizontal: typeof x === 'number' ? resWidth(x) : x,
   marginVertical: typeof y === 'number' ? resHeight(y) : y,
-});
+})
 
 const align = (
   self = 'auto',
@@ -52,7 +52,7 @@ const align = (
   alignSelf: self,
   textAlign,
   textAlignVertical,
-});
+})
 
 const decoration = (
   dec?: string,
@@ -60,11 +60,11 @@ const decoration = (
   color?: string,
   tran?: string,
 ) => ({
-  ...(typeof dec === 'string' ? {textDecorationLine: dec} : {}),
-  ...(typeof style === 'string' ? {textDecorationStyle: style} : {}),
-  ...(typeof color === 'string' ? {textDecorationColor: color} : {}),
-  ...(typeof tran === 'string' ? {textTransform: tran} : {}),
-});
+  ...(typeof dec === 'string' ? { textDecorationLine: dec } : {}),
+  ...(typeof style === 'string' ? { textDecorationStyle: style } : {}),
+  ...(typeof color === 'string' ? { textDecorationColor: color } : {}),
+  ...(typeof tran === 'string' ? { textTransform: tran } : {}),
+})
 
 export type FontWeight =
   | '100'
@@ -76,31 +76,31 @@ export type FontWeight =
   | '700'
   | 'bold'
   | 'normal'
-  | 'medium';
+  | 'medium'
 
 export type FontStyle = {
-  s?: number;
-  c?: string;
-  w?: FontWeight;
-  l?: number | string;
-  f?: AvailableFonts;
-  t?: number | string;
-  r?: number | string;
-  b?: number | string;
-  x?: number | string;
-  y?: number | string;
-  self?: string;
-  text?: string;
-  op?: number;
-  dec?: string;
-  decStyle?: string;
-  secColor?: string;
-  textVer?: string;
-  italic?: boolean;
-  h?: number;
-  ls?: number;
-  tran?: 'none' | 'capitalize' | 'uppercase' | 'lowercase' | undefined;
-};
+  s?: number
+  c?: string
+  w?: FontWeight
+  l?: number | string
+  f?: AvailableFonts
+  t?: number | string
+  r?: number | string
+  b?: number | string
+  x?: number | string
+  y?: number | string
+  self?: string
+  text?: string
+  op?: number
+  dec?: string
+  decStyle?: string
+  secColor?: string
+  textVer?: string
+  italic?: boolean
+  h?: number
+  ls?: number
+  tran?: 'none' | 'capitalize' | 'uppercase' | 'lowercase' | undefined
+}
 
 export const Fonts = {
   t: ({
@@ -133,4 +133,4 @@ export const Fonts = {
       ...decoration(dec, decStyle, secColor, tran),
       opacity: op,
     } as any),
-};
+}

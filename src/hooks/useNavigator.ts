@@ -1,5 +1,5 @@
-import {ParamListBase, useNavigation} from '@react-navigation/native';
-import {StackNavigationProp} from '@react-navigation/stack';
+import { ParamListBase, useNavigation } from '@react-navigation/native'
+import { StackNavigationProp } from '@react-navigation/stack'
 
 export const useNavigator = () =>
-  useNavigation<StackNavigationProp<ParamListBase, string, undefined>>();
+  useNavigation<StackNavigationProp<ParamListBase, string, undefined>>()

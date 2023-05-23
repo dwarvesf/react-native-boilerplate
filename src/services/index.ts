@@ -1,5 +1,5 @@
-import fetcher from './fetcher';
+import fetcher from './fetcher'
 
-export * from './apis';
-export * from './emitter';
-export {fetcher};
+export * from './apis'
+export * from './emitter'
+export { fetcher }

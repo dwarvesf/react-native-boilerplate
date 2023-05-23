@@ -1,14 +1,14 @@
-import {quoteService} from './quote';
+import { quoteService } from './quote'
 
-const authRequiredList = [quoteService];
+const authRequiredList = [quoteService]
 
 const services = {
   setAuthToken: (token: string) => {
-    authRequiredList.forEach(service => service.setAuthToken(token));
+    authRequiredList.forEach((service) => service.setAuthToken(token))
   },
   clearAuthToken: () => {
-    authRequiredList.forEach(service => service.clearAuthToken());
+    authRequiredList.forEach((service) => service.clearAuthToken())
   },
-};
+}
 
-export {services, quoteService};
+export { services, quoteService }

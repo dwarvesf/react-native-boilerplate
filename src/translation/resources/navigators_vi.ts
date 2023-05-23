@@ -1,9 +1,8 @@
-import {ROUTES} from '@constants';
+import { ROUTES } from '@constants'
 
 export default {
   title: {
-    [ROUTES.Home]: 'Home',
+    [ROUTES.Home]: 'Trang chủ',
     [ROUTES.Login]: 'Đăng nhập',
-    [ROUTES.Profile]: 'Cá nhân',
   },
-};
+}

@@ -1,85 +1,42 @@
-import React from 'react';
-import {Text, TouchableOpacity} from 'react-native';
-import {
-  responsiveHeight,
-  responsiveWidth,
-} from 'react-native-responsive-dimensions';
-import {MainLayout} from '@components';
-import {Style} from '@styles';
-import {useNavigator} from '@hooks';
-import {ROUTES} from '@constants';
+import React from 'react'
+import { Text, View } from 'react-native'
+import { responsiveHeight } from '@utils'
+import { MainLayout, Button } from '@components'
+import { Style, Fonts, Palette } from '@styles'
+import { useNavigator } from '@hooks'
+import { ROUTES } from '@constants'
 
 export const HomeScreen = React.memo(() => {
-  const nav = useNavigator();
-
-  const onExampleGetAPI = React.useCallback(() => {
-    nav.navigate(ROUTES.Quote);
-  }, [nav]);
-
-  const onExampleGetDataPagination = React.useCallback(() => {
-    nav.navigate(ROUTES.QuoteList);
-  }, [nav]);
-
-  const onExampleMapView = React.useCallback(() => {
-    nav.navigate(ROUTES.QuoteList);
-  }, [nav]);
+  const nav = useNavigator()
 
   return (
-    <MainLayout header canBack scrollable paddingX={0}>
-      <TouchableOpacity
-        onPress={onExampleGetAPI}
+    <MainLayout header canBack scrollable paddingX={20}>
+      <View
         style={Style.s({
-          px: responsiveWidth(4),
-          py: responsiveHeight(2),
-          bg: 'lightblue',
-        })}>
-        <Text>{'Get API (get, loading, mutate)'}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={onExampleGetDataPagination}
-        style={Style.s({
-          px: responsiveWidth(4),
-          py: responsiveHeight(2),
-          bg: 'lightpink',
-        })}>
-        <Text>{'Infinity list (get data pagination)'}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={onExampleMapView}
-        style={Style.s({
-          px: responsiveWidth(4),
-          py: responsiveHeight(2),
-          bg: 'lightgreen',
-        })}>
-        <Text>{'Header animation'}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={onExampleMapView}
-        style={Style.s({
-          px: responsiveWidth(4),
-          py: responsiveHeight(2),
-          bg: 'honeydew',
-        })}>
-        <Text>{'Shared Element Transition '}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={onExampleMapView}
-        style={Style.s({
-          px: responsiveWidth(4),
-          py: responsiveHeight(2),
-          bg: 'antiquewhite',
-        })}>
-        <Text>{'Utils (toast, alert, clipboard, modal, ...)'}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={() => nav.navigate(ROUTES.Login)}
-        style={Style.s({
-          px: responsiveWidth(4),
-          py: responsiveHeight(2),
-          bg: 'antiquewhite',
-        })}>
-        <Text>{'Login'}</Text>
-      </TouchableOpacity>
+          items: 'center',
+          justify: 'center',
+          mt: responsiveHeight(2),
+          h: responsiveHeight(80),
+        })}
+      >
+        <Text
+          style={Fonts.t({
+            s: 27,
+            w: '700',
+            c: Palette.gray[400],
+            text: 'center',
+          })}
+        >
+          {'Welcome to\nDwarves React Native Boilerplate!'}
+        </Text>
+      </View>
+      <View>
+        <Button
+          title="Login"
+          secondary
+          onPress={() => nav.navigate(ROUTES.Login)}
+        />
+      </View>
     </MainLayout>
-  );
-});
+  )
+})

@@ -10,4 +10,4 @@ export default {
     notice: 'Thông báo',
     cancel: 'Hủy bỏ',
   },
-};
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   View,
   ViewStyle,
@@ -6,28 +6,28 @@ import {
   StyleProp,
   RefreshControl,
   ViewProps,
-} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import {responsiveHeight} from 'react-native-responsive-dimensions';
-import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import {gutters, Style, Palette} from '@styles';
+} from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { responsiveHeight } from '@utils'
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import { gutters, Style, Palette } from '@styles'
 
 export interface MainLayoutProps extends React.PropsWithChildren<ViewProps> {
-  children?: React.ReactNode | React.ReactNode[];
-  style?: StyleProp<ViewStyle>;
-  header?: boolean;
-  canBack?: boolean;
-  onBack?: () => void;
-  headerLeft?: () => React.ReactElement;
-  headerRight?: () => React.ReactElement;
-  headerTitle?: () => React.ReactElement;
-  paddingX?: number;
-  paddingY?: number;
-  scrollable?: boolean;
-  stickyBottom?: () => React.ReactElement;
-  refreshing?: boolean;
-  onRefresh?: () => void;
-  bgColor?: string;
+  children?: React.ReactNode | React.ReactNode[]
+  style?: StyleProp<ViewStyle>
+  header?: boolean
+  canBack?: boolean
+  onBack?: () => void
+  headerLeft?: () => React.ReactElement
+  headerRight?: () => React.ReactElement
+  headerTitle?: () => React.ReactElement
+  paddingX?: number
+  paddingY?: number
+  scrollable?: boolean
+  stickyBottom?: () => React.ReactElement
+  refreshing?: boolean
+  onRefresh?: () => void
+  bgColor?: string
 }
 
 export const MainLayout = React.memo(
@@ -64,10 +64,11 @@ export const MainLayout = React.memo(
                 px: paddingX,
                 py: paddingY,
               }),
-            ]}>
+            ]}
+          >
             {children}
           </KeyboardAwareScrollView>
-        );
+        )
       }
       return (
         <View
@@ -77,11 +78,12 @@ export const MainLayout = React.memo(
               px: paddingX,
               py: paddingY,
             }),
-          ]}>
+          ]}
+        >
           {children}
         </View>
-      );
-    }, [scrollable, paddingX, paddingY, children, onRefresh, refreshing]);
+      )
+    }, [scrollable, paddingX, paddingY, children, onRefresh, refreshing])
 
     return (
       <SafeAreaView
@@ -89,13 +91,14 @@ export const MainLayout = React.memo(
           Style.s({
             flex: 1,
             bg: bgColor,
-            pb: Platform.select({android: responsiveHeight(1)}),
+            pb: Platform.select({ android: responsiveHeight(1) }),
           }),
           style,
-        ]}>
+        ]}
+      >
         {BodyComponent}
         {typeof stickyBottom === 'function' ? stickyBottom() : null}
       </SafeAreaView>
-    );
+    )
   },
-);
+)

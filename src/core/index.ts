@@ -1,3 +1,3 @@
-import {DropDownHolder} from './dropDownHolder';
+import { DropDownHolder } from './dropDownHolder'
 
-export {DropDownHolder};
+export { DropDownHolder }

@@ -1,3 +1,3 @@
 export default {
-  no_connection: 'Không có kết nối, vui lòng thử lại',
-};
+  no_connection: 'Không có kết nối, vui lòng thử lại!',
+}

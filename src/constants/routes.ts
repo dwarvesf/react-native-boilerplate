@@ -1,31 +1,26 @@
-import {createNavigationContainerRef} from '@react-navigation/native';
+import { createNavigationContainerRef } from '@react-navigation/native'
 
 export enum ROUTES {
   Home = 'Home',
   Login = 'Login',
-  Profile = 'Profile',
-  SignUp = 'SignUp',
   Splash = 'Splash',
   QuoteList = 'QuoteList',
   Quote = 'Quote',
-  Dashboard = 'Dashboard',
 }
 
 type LoginParams = {
-  user: ROUTES;
-  password?: string;
-};
+  user: ROUTES
+  password?: string
+}
 
 export type MainStackNavigatorParamList = {
-  Home: undefined;
-  Login: LoginParams;
-  Profile: undefined;
-  SignUp: undefined;
-  Splash: undefined;
-  QuoteList: undefined;
-  Quote: undefined;
-  Dashboard: undefined;
-};
+  Home: undefined
+  Login: LoginParams
+  SignUp: undefined
+  Splash: undefined
+  QuoteList: undefined
+  Quote: undefined
+}
 
 declare global {
   namespace ReactNavigation {
@@ -34,4 +29,4 @@ declare global {
 }
 
 export const navigationRef =
-  createNavigationContainerRef<MainStackNavigatorParamList>();
+  createNavigationContainerRef<MainStackNavigatorParamList>()

@@ -23,4 +23,4 @@ export default {
     number_format: 'Chỉ được nhập số',
     max_100: 'Vui lòng nhập tối đa 100 ký tự',
   },
-};
+}

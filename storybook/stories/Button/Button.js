@@ -1,16 +1,17 @@
-import React from 'react';
-import {TouchableOpacity, Text, StyleSheet} from 'react-native';
+import React from 'react'
+import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 
-export const MyButton = ({onPress, text}) => {
+export const MyButton = ({ onPress, text }) => {
   return (
     <TouchableOpacity
       style={styles.container}
       onPress={onPress}
-      activeOpacity={0.8}>
+      activeOpacity={0.8}
+    >
       <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -19,5 +20,5 @@ const styles = StyleSheet.create({
     backgroundColor: 'purple',
     borderRadius: 8,
   },
-  text: {color: 'white'},
-});
+  text: { color: 'white' },
+})

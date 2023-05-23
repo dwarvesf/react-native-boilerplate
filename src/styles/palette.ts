@@ -15,4 +15,4 @@ export const Palette = {
       100: '#6B7280',
     },
   },
-};
+}
