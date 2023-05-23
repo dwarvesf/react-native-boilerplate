@@ -3,9 +3,6 @@ import { createNavigationContainerRef } from '@react-navigation/native'
 export enum ROUTES {
   Home = 'Home',
   Login = 'Login',
-  Splash = 'Splash',
-  QuoteList = 'QuoteList',
-  Quote = 'Quote',
 }
 
 type LoginParams = {
@@ -16,10 +13,6 @@ type LoginParams = {
 export type MainStackNavigatorParamList = {
   Home: undefined
   Login: LoginParams
-  SignUp: undefined
-  Splash: undefined
-  QuoteList: undefined
-  Quote: undefined
 }
 
 declare global {
