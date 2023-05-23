@@ -1,4 +1,4 @@
-import { quoteService } from './quote'
+import { quoteService } from './example-api'
 
 const authRequiredList = [quoteService]
 

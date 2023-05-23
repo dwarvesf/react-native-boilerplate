@@ -2,6 +2,9 @@ import Config from 'react-native-config'
 
 type Headers = Record<string, string>
 
+/**
+ * HTTP client class for managing headers and base URL.
+ */
 export class Client {
   headers: Headers = {
     'Content-Type': 'application/json',
@@ -11,8 +14,10 @@ export class Client {
     ...this.headers,
   }
 
+  // Get base URL from .env or fallback to an empty string
   baseUrl: string = Config?.BASE_URL ?? ''
 
+  // Get headers for form data.
   public get formDataHeaders(): Headers {
     const cloned = Object.assign({}, this.privateHeaders)
     // Browsers will auto-set Content-Type and other things when formData is used
