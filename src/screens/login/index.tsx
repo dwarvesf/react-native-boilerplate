@@ -44,7 +44,7 @@ export const LoginScreen = React.memo(() => {
           {'Password'}
         </Text>
         <View style={Style.s({ h: 6 })} />
-        <Input placeholder="Password" />
+        <Input secureTextEntry={true} placeholder="Password" />
       </View>
       <View style={Style.s({ h: responsiveHeight(3) })} />
       <View
