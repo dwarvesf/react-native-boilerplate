@@ -1,11 +1,20 @@
 import fetch from 'isomorphic-unfetch'
 import { API_REQUEST, emitter } from './emitter'
 
+/**
+ * Custom error class for fetcher errors.
+ */
 export class FetcherError extends Error {
   public statusCode: number
   public res: Response
   public body?: any
 
+  /**
+   * Create a new FetcherError instance.
+   * @param message Error message
+   * @param statusCode HTTP status code
+   * @param origResponse Original response object
+   */
   constructor(message: string, statusCode: number, origResponse: Response) {
     super(message)
     this.name = 'HttpError'
@@ -14,9 +23,15 @@ export class FetcherError extends Error {
   }
 }
 
+/**
+ * Custom fetcher function for making API requests.
+ * @param input Request URL or Request object
+ * @param init Optional request configuration
+ * @returns Promise that resolves to JSON data
+ */
 export default async function fetcher<JSON = any>(
   input: RequestInfo,
-  init?: RequestInit
+  init?: RequestInit,
 ): Promise<JSON> {
   try {
     const res = await fetch(input, init)
@@ -28,7 +43,9 @@ export default async function fetcher<JSON = any>(
 
     const error = new FetcherError(res.statusText, res.status, res)
 
-    const isResponseJson = res.headers.get('content-type')?.includes('application/json')
+    const isResponseJson = res.headers
+      .get('content-type')
+      ?.includes('application/json')
 
     if (isResponseJson) {
       let data

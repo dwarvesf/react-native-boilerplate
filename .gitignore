@@ -2,6 +2,9 @@
 #
 .DS_Store
 
+# IDE
+.vscode
+
 # Xcode
 #
 build/
@@ -61,3 +64,10 @@ yarn-error.log
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local

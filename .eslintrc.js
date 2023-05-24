@@ -5,14 +5,10 @@ module.exports = {
   },
   extends: '@react-native-community',
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
   plugins: ['react', 'react-native'],
+  rules: {
+    semi: 'off',
+  },
   root: true,
   settings: {
     'react-native/style-sheet-object-names': [
@@ -35,7 +31,7 @@ module.exports = {
           ['@screens', './src/screens'],
           ['@services', './src/services'],
           ['@styles', './src/styles'],
-          ['@translation', './src/translation'],
+          ['@translations', './src/translations'],
           ['@types', './src/types'],
           ['@utils', './src/utils'],
         ],
@@ -43,4 +39,4 @@ module.exports = {
       },
     },
   },
-};
+}

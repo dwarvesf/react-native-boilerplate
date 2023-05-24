@@ -30,7 +30,7 @@ yarn ios
 │── navigators                   # Navigation flow
 ├── context                      # Shared context state
 ├── constants                    # Shared constants
-├── translation                  # Locale translation
+├── translations                 # Locale translations
 ├── hooks                        # Shared hooks
 │   └── tests
 │── styles                       # Shared style folder
