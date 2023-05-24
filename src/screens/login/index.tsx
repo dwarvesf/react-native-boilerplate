@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text } from 'react-native'
+import { useTranslation } from 'react-i18next'
 import FastImage from 'react-native-fast-image'
 import { MainLayout, Input, Checkbox, Button } from '@components'
 import { Style, Fonts, Palette } from '@styles'
@@ -10,6 +11,7 @@ import { ROUTES } from '@constants'
 
 export const LoginScreen = React.memo(() => {
   const nav = useNavigator()
+  const { t } = useTranslation()
 
   const onSignIn = React.useCallback(() => {
     // TODO: handle sign in
@@ -26,25 +28,25 @@ export const LoginScreen = React.memo(() => {
         />
         <View style={Style.s({ h: responsiveHeight(2) })} />
         <Text style={Fonts.t({ s: 27, w: '700', c: Palette.gray[400] })}>
-          {'Sign in'}
+          {t('sign_in')}
         </Text>
         <View style={Style.s({ h: 5 })} />
       </View>
       <View style={Style.s({ h: responsiveHeight(4) })} />
       <View>
         <Text style={Fonts.t({ s: 14, w: '500', c: Palette.gray[300] })}>
-          {'Email'}
+          {t('email')}
         </Text>
         <View style={Style.s({ h: 6 })} />
-        <Input placeholder="Email" />
+        <Input placeholder={t('email')} />
       </View>
       <View style={Style.s({ h: responsiveHeight(3) })} />
       <View>
         <Text style={Fonts.t({ s: 14, w: '500', c: Palette.gray[300] })}>
-          {'Password'}
+          {t('password')}
         </Text>
         <View style={Style.s({ h: 6 })} />
-        <Input secureTextEntry={true} placeholder="Password" />
+        <Input secureTextEntry={true} placeholder={t('password')} />
       </View>
       <View style={Style.s({ h: responsiveHeight(3) })} />
       <View
@@ -58,16 +60,16 @@ export const LoginScreen = React.memo(() => {
           <Checkbox />
           <View style={Style.s({ w: responsiveWidth(2) })} />
           <Text style={Fonts.t({ s: 14, w: '500', c: Palette.gray[300] })}>
-            {'Remember me'}
+            {t('remember_me')}
           </Text>
         </View>
         <Text style={Fonts.t({ s: 14, w: '500', c: Palette.primary })}>
-          {'Forgot your password?'}
+          {t('forgot_password')}
         </Text>
       </View>
       <View style={Style.s({ h: responsiveHeight(3) })} />
       <View>
-        <Button title="Sign in" primary onPress={onSignIn} />
+        <Button title={t('sign_in')} primary onPress={onSignIn} />
       </View>
     </MainLayout>
   )

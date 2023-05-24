@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
+import { useTranslation } from 'react-i18next'
 import { responsiveHeight } from '@utils'
 import { MainLayout, Button } from '@components'
 import { Style, Fonts, Palette } from '@styles'
@@ -8,6 +9,7 @@ import { ROUTES } from '@constants'
 
 export const HomeScreen = React.memo(() => {
   const nav = useNavigator()
+  const { t } = useTranslation()
 
   return (
     <MainLayout header canBack scrollable paddingX={20}>
@@ -32,7 +34,7 @@ export const HomeScreen = React.memo(() => {
       </View>
       <View>
         <Button
-          title="Login"
+          title={t('sign_out')}
           secondary
           onPress={() => nav.navigate(ROUTES.Login)}
         />
