@@ -5,7 +5,7 @@ import FastImage from 'react-native-fast-image'
 import { MainLayout, Input, Checkbox, Button } from '@components'
 import { Style, Fonts, Palette } from '@styles'
 import { images } from '@assets'
-import { responsiveHeight, responsiveWidth } from '@utils'
+import { responsiveHeight } from '@utils'
 import { useNavigator } from '@hooks'
 import { ROUTES } from '@constants'
 
@@ -57,11 +57,7 @@ export const LoginScreen = React.memo(() => {
         })}
       >
         <View style={Style.s({ direc: 'row', items: 'center' })}>
-          <Checkbox />
-          <View style={Style.s({ w: responsiveWidth(2) })} />
-          <Text style={Fonts.t({ s: 14, w: '500', c: Palette.gray[300] })}>
-            {t('remember_me')}
-          </Text>
+          <Checkbox text={t('remember_me')} />
         </View>
         <Text style={Fonts.t({ s: 14, w: '500', c: Palette.primary })}>
           {t('forgot_password')}

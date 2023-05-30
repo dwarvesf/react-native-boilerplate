@@ -30,12 +30,13 @@ export const getButtonTitleStyle = (primary?: boolean, secondary?: boolean) => {
 }
 
 export const Button = React.memo(
-  ({ title, primary, secondary, ...rest }: ButtonProps) => {
+  ({ title, primary, secondary, style, ...rest }: ButtonProps) => {
     return (
       <TouchableOpacity
         style={[
           Style.s({ cen: true, minH: 48, bor: 6 }),
           getButtonStyle(primary, secondary),
+          style,
         ]}
         {...rest}
       >
