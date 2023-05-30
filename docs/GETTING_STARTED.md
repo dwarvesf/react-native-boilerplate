@@ -9,7 +9,11 @@ yarn
 Then, you can run locally in development mode with live reload:
 
 ```bash
-yarn ios
+yarn ios # for iOS
+```
+
+```bash
+yarn android # for android
 ```
 
 ## Code organization
@@ -39,7 +43,7 @@ yarn ios
 │   └── palette.ts               # Palette colors
 │   └── style.ts                 # Style Utility func
 │── utils                        # Utility folder
-│   └── tests
+│   └── __tests__
 ├── metro.config.js              # Metro configuration
 └── tsconfig.json                # TypeScript configuration
 ```
@@ -55,28 +59,6 @@ yarn storybook
 
 The UI document then should be live at
 [http://localhost:6006](http://localhost:6006).
-
-### TypeScript API generator
-
-If your team use Swagger to document APIs, we support a node script to generate
-TypeScript interfaces via your Swagger scheme. In
-[package.json](../package.json), change the default path to the location of your
-Swagger JSON doc.
-
-```
-- "fetch-definitions": "swagger-typescript-api --no-client -p ./libs/swagger.json -o ./types -n schema.ts",
-+ "fetch-definitions": "swagger-typescript-api --no-client -p your-api-swagger-json -o ./types -n schema.ts",
-```
-
-Then, you can run the script locally to generate TypeScript definitions for the
-APIs:
-
-```bash
-yarn fetch-definitions
-```
-
-The generated interfaces will be located at
-[types/schema.ts](../types/schema.ts).
 
 ## Read on:
 

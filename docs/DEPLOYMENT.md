@@ -28,6 +28,11 @@ Note: Any product changes which touch native code (e.g. modifying your AppDelega
 Integrate code push to your app
 https://github.com/microsoft/react-native-code-push
 
+## Document UI
+
+- Build command: `yarn build-storybook`
+- Pulish directory: `storybook-static`
+
 ## Read on:
 
 - [Home](../README.md)
