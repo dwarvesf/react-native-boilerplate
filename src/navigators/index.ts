@@ -1,1 +1,1 @@
-export * from './AppContainer'
+export * from './appContainer'
